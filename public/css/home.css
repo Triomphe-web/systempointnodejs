@@ -1,0 +1,114 @@
+*{ margin: 0; padding: 0; }
+a{ text-decoration:none; }
+h2{line-height:100%; }
+li{list-style:none;}
+.login{
+  padding:40px;
+  background:#f1f1f1;
+  width: 410px; 
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+a#link_:hover{
+  text-decoration: none;
+}
+.login h2{
+  padding:0 0 20px;
+  border-bottom:2px solid #111;
+  font-size: 32px; 
+  color: #111;
+}
+.login > ul{
+  padding: 40px 0 33px;
+}
+.login > ul li{
+  padding:0 0 12px;
+  text-align:left;
+}
+.login > ul li input{
+  width: 100%;
+  height: 46px;
+  box-sizing:border-box;
+  text-indent:16px;
+}
+.login > ul li input::-webkit-input-placeholder{
+  font-size: 16px; color:#9fa19f;  
+}
+.login > ul li input::-ms-input-placeholder{
+  font-size: 16px; color:#9fa19f;  
+}
+.login > ul li input::placeholder{
+  font-size: 16px; color:#9fa19f; 
+}
+.login > ul li input[type="checkbox"]{
+  position:absolute;
+  left: -3000%;
+}
+.login > ul li input[type="checkbox"] + label{
+  height: 36px;
+  line-height: 36px;
+}
+.login > ul li input[type="checkbox"] + label:before{
+  content:"";
+  margin: 0 10px 0 0;
+  display:inline-block;
+  width: 18px;
+  height: 18px;
+  border:1px solid #777;
+  background:#eee;
+  vertical-align:-3px;
+}
+.login > ul li input[type="checkbox"]:checked + label{
+  color:rgb(0, 207, 52);
+}
+.login > ul li input[type="checkbox"]:checked + label:before{
+  background-color:#333; border-color:#333;
+}
+.login button{
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+  color:#fff;
+}
+.login div{
+  padding: 0 0 45px;
+}
+.login div ul{
+  display:flex;
+  justify-content:center;
+}
+.login div ul li{
+  position:relative;
+  padding: 0 18px;
+}
+.login div ul li~li:before{
+  content:"";
+  position:absolute; 
+  left: 0;
+  top: 6px;
+  width: 1px;
+  height: 14px;
+  background:#111;
+  transform:rotate(25deg);
+}
+.login div ul li a{
+  font-size: 14px;
+  color: #111;
+}
+.login>a{
+  position:relative;
+  font-size: 14px;
+  color:#777;
+}
+.login>a:after{
+  content:"";
+  position:absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background:#777;
+}
