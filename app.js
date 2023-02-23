@@ -18,6 +18,7 @@ sequelize.initDB()
 
 // ROUTES
 require('./routes/home')(app)
+require('./routes/Inscription')(app)
 require('./routes/GetTimeArrived')(app)
 require('./routes/SendTimerUser')(app)
 require('./routes/AddEmploye')(app)

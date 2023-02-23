@@ -34,6 +34,19 @@ a#link_:hover{
   box-sizing:border-box;
   text-indent:16px;
 }
+.login > ul li input:focus{
+  outline: 0;
+}
+.input-control-success{
+  background-color: #09c372;
+}
+.input-control-error{
+  background-color: #ff3360;
+}
+small{
+  display: none;
+}
+
 .login > ul li input::-webkit-input-placeholder{
   font-size: 16px; color:#9fa19f;  
 }

@@ -26,10 +26,13 @@
         <h2>App pointage</h2>
         <ul>
           <form action="/api/get_user_entry/" method="post">
-            <li><input class="form-control" name="username" type="text" required placeholder="Votre nom" title="Votre nom"></li>
+            <li><input onchange="verifyName()" class="form-control" name="username" id="name_input" type="text" required placeholder="Votre nom" title="Votre nom"></li>
+            <li><small id="name_error"></small></li>
             <li><input class="form-control" name="password" type="password" required placeholder="Mot de Passe" title="Mot de Passe"></li>
             <li><button type="submit" class="btn btn-primary">Se Connecter</button></li>
           </form>
+          <br>
+            <li class="text-center"><small>Pas encore de compte, </small><a href="/inscription">Inscrivez-vous</a></li>
           <br>
           <hr>
         </ul>
@@ -48,5 +51,6 @@
     <script src="/jquery/jquery-3.6.0.js"></script>
     <script src="/BootstrapJS/bootstrap.min.js"></script>
     <script src="/BootstrapJS/bootstrap.bundle.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 </html>

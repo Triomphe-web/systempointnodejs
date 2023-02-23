@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BootstrapCss/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Login</title>
+</head>
+<body class="bg-dark">
+    <section class="login">
+        <h2>Inscription</h2>
+        <ul>
+          <form>
+            <li><input onchange="verifyName()" class="form-control" name="username" id="name_input" type="text" required placeholder="Votre nom" title="Votre nom"></li>
+            <li><small id="name_error"></small></li>
+            <!-- name -->
+            <li><input onchange="verifyPassword()" class="form-control" name="password" id="pass_input" type="password" required placeholder="Votre mot de passe" title="Votre mot de passe"></li>
+            <li><small id="pass1_error"></small></li>
+            <li><input class="form-control" id="pass2_input" type="password" onchange="verifyMatchPassword()" required placeholder="Confirmer Mot de Passe" title="Mot de Passe"></li>
+            <li><small id="pass2_error"></small></li>
+            <br>
+            <br>
+            <li><button id="btn_insc" type="submit" class="btn btn-primary">S'Inscrire</button></li>
+          </form>
+          <br>
+          <hr>
+        </ul>
+      </section>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="/jquery/jquery-3.6.0.js"></script>
+    <script src="/BootstrapJS/bootstrap.min.js"></script>
+    <script src="/BootstrapJS/bootstrap.bundle.js"></script>
+    <script src="/js/home.js"></script>
+</body>
+</html>
